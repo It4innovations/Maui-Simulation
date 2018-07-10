@@ -1,0 +1,86 @@
+diff --git a/include/msched-common.h b/include/msched-common.h
+index 1a305a6..fae8be6 100644
+--- a/include/msched-common.h
++++ b/include/msched-common.h
+@@ -182,7 +182,9 @@ particular circumstance, the balance of the LICENSE will continue to apply.
+ #define MAX_MNODE_PER_FRAG  1024
+ 
+ #ifndef MAX_MTASK
+-# define MAX_MTASK         4096
++//# define MAX_MTASK         4096
++// Increase upper limit
++# define MAX_MTASK         32768
+ #endif /* MAX_MTASK */
+ 
+ #define MAX_MTASK_PER_FRAG  MAX_MTASK
+diff --git a/include/msched.h b/include/msched.h
+index 7438cda..ab926b7 100644
+--- a/include/msched.h
++++ b/include/msched.h
+@@ -441,11 +441,13 @@ enum {
+ 
+ #define MAX_VAL      2140000000
+ 
+-#define MMAX_JOB           4096
++//#define MMAX_JOB           4096
++#define MMAX_JOB           80000
+ #define MAX_MJOB       MMAX_JOB
+ 
+ 
+ #define MAX_MJOB_TRACE     4096
++//#define MAX_MJOB_TRACE     32000
+ 
+ #define MAX_TASK_REQUESTS    32
+ #define MAX_REQ_TYPE         16
+@@ -463,7 +465,7 @@ enum {
+ #define MAX_MSRES           128
+ #define MAX_SRES_DEPTH       64
+ #define MAX_MRANGE          256
+-#define MAX_PRIO_VAL 1000000000
++#define MAX_PRIO_VAL 1000000000000
+ #define MAX_ATTEMPTS        500
+ #define MAX_MADMINUSERS      64
+ #define MAX_MADMINHOSTS      64
+diff --git a/src/moab/MSim.c b/src/moab/MSim.c
+index 01ad9c3..ca6050d 100644
+--- a/src/moab/MSim.c
++++ b/src/moab/MSim.c
+@@ -747,6 +747,7 @@ int MSimGetWorkload()
+     MResAdjustTime(NewTime - MSched.Time);
+  
+     MSched.Time = NewTime;
++    MStat.InitTime = NewTime;
+     }
+  
+   return(SUCCESS);
+@@ -1843,7 +1844,7 @@ int MSimJobSubmit(
+     {
+     /* adjust job queue time */
+ 
+-    J->SubmitTime = MSched.Time;
++    // removed: J->SubmitTime = MSched.Time;
+     }
+ 
+   J->SystemQueueTime = J->SubmitTime;
+diff --git a/src/server/UserI.c b/src/server/UserI.c
+index d5cb30b..cd5fce7 100644
+--- a/src/server/UserI.c
++++ b/src/server/UserI.c
+@@ -6460,7 +6460,7 @@ int UIResCreate(
+     P = &MPar[0];
+ 
+   /* adjust for simulation time discrepancies */
+-
++/*
+   if (MSched.Mode == msmSim)
+     {
+     StartTime += (MSched.Time - ClientTime);
+@@ -6468,7 +6468,7 @@ int UIResCreate(
+     if (EndTime < MAX_MTIME)
+       EndTime += (MSched.Time - ClientTime);
+     }
+-
++*/
+   StartTime = MAX(StartTime,MSched.Time);
+ 
+   if (StartTime >= EndTime)

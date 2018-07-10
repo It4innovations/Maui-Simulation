@@ -22,3 +22,6 @@ Change the path `/home/userx/workdir` according to the previous changes.
 3. Start simulation:
 Within the Docker container execute the control script `control_example.sh`. Alternatively you can manually use the Maui Scheduler tools to control the simulation (`showstats`, `schedctl`, `setres`, etc.).
 The results can be found in the `stats` directory (file `simstat.out`).
+
+# Acknowledgement
+This work was supported by The Ministry of Education, Youth and Sports from the Large Infrastructures for Research, Experimental Development and Innovations project ”IT4Innovations National Supercomputing Center – LM2015070”, as well as by the ERDF in the IT4Innovations national supercomputing center - path to exascale project (CZ.02.1.01/0.0/0.0/16_013/0001791) within the OPRDE.

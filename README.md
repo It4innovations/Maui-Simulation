@@ -11,15 +11,15 @@ This repository contains the setup of the Maui Scheduler to simulate the job sch
 
 # Quick Start Guide
 
-1. Build the Docker image:
+1. Build the Docker image:\
 Change the user name (replace `userx`) and paths in `maui.cfg` and `Dockerfile` to reflect your environment. Then, build the Docker image:
 `$ docker build -t maui_simulator .`
 
-2. Start the Docker container:
+2. Start the Docker container:\
 `$ docker run --rm -it --hostname mauisim -v .:/home/userx/workdir maui_simulator`
 Change the path `/home/userx/workdir` according to the previous changes.
 
-3. Start simulation:
+3. Start simulation:\
 Within the Docker container execute the control script `control_example.sh`. Alternatively you can manually use the Maui Scheduler tools to control the simulation (`showstats`, `schedctl`, `setres`, etc.).
 The results can be found in the `stats` directory (file `simstat.out`).
 

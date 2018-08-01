@@ -20,7 +20,9 @@ Change the user name (replace `userx`) and paths in `maui.cfg` and `Dockerfile` 
 Change the path `/home/userx/workdir` according to the previous changes.
 
 3. Start simulation:\
-Within the Docker container execute the control script `control_example.sh`. Alternatively you can manually use the Maui Scheduler tools to control the simulation (`showstats`, `schedctl`, `setres`, etc.).\
+Within the Docker container, start the Maui Scheduler's simulator:\ 
+`/usr/local/maui/sbin/maui &`\
+Then, execute the control script `control_example.sh`. Alternatively you can manually use the Maui Scheduler tools to control the simulation (`showstats`, `schedctl`, `setres`, etc.).\
 The results can be found in the `stats` directory (file `simstat.out`).
 
 # Acknowledgement

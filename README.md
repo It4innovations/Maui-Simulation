@@ -26,7 +26,9 @@ Then, execute the control script `control_example.sh`. Alternatively you can man
 The results can be found in the `stats` directory (file `simstat.out`).
 
 # Interactive Plots
-You can find the plots from the paper as a Jupyter notebook file (`interactive_plots/plots.ipynb`). It loads the plots from Python pickle files (`*.pkl`). Open the file in your own Jupyter notebook environment for interactive display.
+You can find the plots from the paper as a Jupyter notebook file (`interactive_plots/plots.ipynb`). It loads the plots from Python pickle files (`*.pkl`). Open the file in your own Jupyter notebook environment for interactive display.\
+Example of an interactive plot:\
+![Alt text](images/interactive_plot_example.png?raw=true "Example of an interactive plot (cluster utilization of week 7)")
 
 # Acknowledgement
 This work was supported by The Ministry of Education, Youth and Sports from the Large Infrastructures for Research, Experimental Development and Innovations project ”IT4Innovations National Supercomputing Center – LM2015070”, as well as by the ERDF in the IT4Innovations national supercomputing center - path to exascale project (CZ.02.1.01/0.0/0.0/16_013/0001791) within the OPRDE.

@@ -27,10 +27,12 @@ The results can be found in the `stats` directory (file `simstat.out`).
 
 # Interactive Plots
 You can find the plots from the paper as a Jupyter notebook file (`interactive_plots/plots.ipynb`). It loads the plots from Python pickle files (`*.pkl`). Open the file in your own Jupyter notebook environment for interactive display.\
+\
 **Note**:\
-To avoid incompatibility, please use the same Jupyter notebook environment we have used for creating the pickle files (uses Matplotlib 2.2.x). You can use the Jupyter notebook *scipy-notebook* (tag: 265297f221de) from [Docker Hub](https://hub.docker.com/r/jupyter/scipy-notebook/). In the subfolder **interactive_plots** of our repository, execute the following command:\
+To avoid incompatibility, please use the same Jupyter notebook environment we have used for creating the pickle files (uses Matplotlib 2.2.x). You can use the Jupyter notebook *scipy-notebook* (tag: 265297f221de) from [Docker Hub](https://hub.docker.com/r/jupyter/scipy-notebook/). In the subfolder `interactive_plots` of our repository, execute the following command:\
 `$ docker run --rm -p 8888:8888 -v "$PWD":/home/jovyan/interactive_plots jupyter/scipy-notebook:265297f221de`\
 Once prompted, open the printed URL in the browser. Open the Jupyter notebook file mentioned above and execute the notebook cell for interactive plots.\
+\
 Example of an interactive plot:\
 ![Alt text](images/interactive_plot_example.png?raw=true "Example of an interactive plot (cluster utilization of week 7)")
 

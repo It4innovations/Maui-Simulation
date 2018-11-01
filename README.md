@@ -28,6 +28,8 @@ The results can be found in the `stats` directory (file `simstat.out`).
 # Interactive Plots
 You can find the plots from the paper as a Jupyter notebook file (`interactive_plots/plots.ipynb`). It loads the plots from Python pickle files (`*.pkl`). Open the file in your own Jupyter notebook environment for interactive display.\
 \
+You can get a preview (static only) using the [Jupyter nbviewer](https://nbviewer.jupyter.org/github/It4innovations/Maui-Simulation/blob/master/interactive_plots/plots.ipynb).\
+\
 **Note**:\
 To avoid incompatibility, please use the same Jupyter notebook environment we have used for creating the pickle files (uses Matplotlib 2.2.x). You can use the Jupyter notebook *scipy-notebook* (tag: 265297f221de) from [Docker Hub](https://hub.docker.com/r/jupyter/scipy-notebook/). In the subfolder `interactive_plots` of our repository, execute the following command:\
 `$ docker run --rm -p 8888:8888 -v "$PWD":/home/jovyan/interactive_plots jupyter/scipy-notebook:265297f221de`\

@@ -39,6 +39,8 @@ Example of an interactive plot:\
 ![Alt text](images/interactive_plot_example.png?raw=true "Example of an interactive plot (cluster utilization of week 7)")
 
 # Paper and Citation
+The paper is available for download on [iadis digital library](http://www.iadisportal.org/digital-library/job-simulation-for-large-scale-pbs-based-clusters-with-the-maui-scheduler).
+
     @CONFERENCE{Zitzlsberger2018137,
         author={Zitzlsberger, G. and Jansík, B. and Martinovič, J.},
         title={Job simulation for large-scale PBS based clusters with the Maui Scheduler},

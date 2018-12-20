@@ -50,7 +50,7 @@ The paper is available for download on [iadis digital library](http://www.iadisp
         pages={137-145}
     }
 
-The extended version of the paper, published by the journal IADIS INTERNATIONAL JOURNAL ON COMPUTER SCIENCE AND INFORMATION SYSTEMS Vol.13 Number 2 (2018), is available for download on [iadis digital library](http://www.iadisportal.org/ijcsis/papers/2018130204.pdf).
+The extended version of the paper, published by the journal [IADIS INTERNATIONAL JOURNAL ON COMPUTER SCIENCE AND INFORMATION SYSTEMS](http://www.iadisportal.org/ijcsis/) Vol.13 Number 2 (2018), is available for download on [iadis digital library](http://www.iadisportal.org/ijcsis/papers/2018130204.pdf).
 
 # Acknowledgement
 This work was supported by The Ministry of Education, Youth and Sports from the Large Infrastructures for Research, Experimental

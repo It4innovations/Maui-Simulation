@@ -52,6 +52,9 @@ The paper is available for download on [iadis digital library](http://www.iadisp
 
 The extended version of the paper, published by the journal [IADIS INTERNATIONAL JOURNAL ON COMPUTER SCIENCE AND INFORMATION SYSTEMS](http://www.iadisportal.org/ijcsis/) Vol.13 Number 2 (2018), is available for download on [iadis digital library](http://www.iadisportal.org/ijcsis/papers/2018130204.pdf).
 
+# Contact
+Should you have any feedback or questions, please contact the author: Georg Zitzlsberger (georg.zitzlsberger(a)vsb.cz).
+
 # Acknowledgement
 This work was supported by The Ministry of Education, Youth and Sports from the Large Infrastructures for Research, Experimental
 Development and Innovations project ”IT4Innovations National Supercomputing Center – LM2015070”, by the ERDF in the IT4Innovations national supercomputing center – path to exascale project (CZ.02.1.01/0.0/0.0/16_013/0001791) within the OPRDE, and ANTAREX, a project supported by the EU H2020 FET-HPC program under grant agreement No. 671623.

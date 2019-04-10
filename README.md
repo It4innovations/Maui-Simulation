@@ -11,32 +11,32 @@ This repository contains the setup of the Maui Scheduler to simulate the job sch
 
 # Quick Start Guide
 
-1. Build the Docker image:\
-Change the user name (replace `userx`) and paths in `maui.cfg` and `Dockerfile` to reflect your environment. Then, build the Docker image:\
+1. Build the Docker image:  
+Change the user name (replace `userx`) and paths in `maui.cfg` and `Dockerfile` to reflect your environment. Then, build the Docker image:  
 `$ docker build -t maui_simulator .`
 
-2. Start the Docker container:\
-`$ docker run --rm -it --hostname mauisim -v .:/home/userx/workdir maui_simulator`\
+2. Start the Docker container:  
+`$ docker run --rm -it --hostname mauisim -v .:/home/userx/workdir maui_simulator`  
 Change the path `/home/userx/workdir` according to the previous changes.
 
-3. Start simulation:\
-Within the Docker container, start the Maui Scheduler's simulator:\
-`/usr/local/maui/sbin/maui &`\
-Then, execute the control script `control_example.sh`. Alternatively you can manually use the Maui Scheduler tools to control the simulation (`showstats`, `schedctl`, `setres`, etc.).\
+3. Start simulation:  
+Within the Docker container, start the Maui Scheduler's simulator:  
+`/usr/local/maui/sbin/maui &`  
+Then, execute the control script `control_example.sh`. Alternatively you can manually use the Maui Scheduler tools to control the simulation (`showstats`, `schedctl`, `setres`, etc.).  
 The results can be found in the `stats` directory (file `simstat.out`).
 
 # Interactive Plots
-You can find the plots from the paper as a Jupyter notebook file (`interactive_plots/plots.ipynb`). It loads the plots from Python pickle files (`*.pkl`). Open the file in your own Jupyter notebook environment for interactive display.\
-\
-You can get a preview (static only) using the Jupyter nbviewer:\
-[<img src="https://nbviewer.jupyter.org/static/img/nav_logo.svg" width="150" alt="Preview in Jupyter nbviewer">](https://nbviewer.jupyter.org/github/It4innovations/Maui-Simulation/blob/master/interactive_plots/plots.ipynb)\
-\
-**Note**:\
-To avoid incompatibility, please use the same Jupyter notebook environment we have used for creating the pickle files (uses Matplotlib 2.2.x). You can use the Jupyter notebook *scipy-notebook* (tag: 265297f221de) from [Docker Hub](https://hub.docker.com/r/jupyter/scipy-notebook/). In the subfolder `interactive_plots` of our repository, execute the following command:\
-`$ docker run --rm -p 8888:8888 -v "$PWD":/home/jovyan/interactive_plots jupyter/scipy-notebook:265297f221de`\
-Once prompted, open the printed URL in the browser. Open the Jupyter notebook file mentioned above and execute the notebook cell for interactive plots.\
-\
-Example of an interactive plot:\
+You can find the plots from the paper as a Jupyter notebook file (`interactive_plots/plots.ipynb`). It loads the plots from Python pickle files (`*.pkl`). Open the file in your own Jupyter notebook environment for interactive display.  
+  
+You can get a preview (static only) using the Jupyter nbviewer:  
+[<img src="https://nbviewer.jupyter.org/static/img/nav_logo.svg" width="150" alt="Preview in Jupyter nbviewer">](https://nbviewer.jupyter.org/github/It4innovations/Maui-Simulation/blob/master/interactive_plots/plots.ipynb)  
+  
+**Note**:  
+To avoid incompatibility, please use the same Jupyter notebook environment we have used for creating the pickle files (uses Matplotlib 2.2.x). You can use the Jupyter notebook *scipy-notebook* (tag: 265297f221de) from [Docker Hub](https://hub.docker.com/r/jupyter/scipy-notebook/). In the subfolder `interactive_plots` of our repository, execute the following command:  
+`$ docker run --rm -p 8888:8888 -v "$PWD":/home/jovyan/interactive_plots jupyter/scipy-notebook:265297f221de`  
+Once prompted, open the printed URL in the browser. Open the Jupyter notebook file mentioned above and execute the notebook cell for interactive plots.  
+  
+Example of an interactive plot:  
 ![Alt text](images/interactive_plot_example.png?raw=true "Example of an interactive plot (cluster utilization of week 7)")
 
 # Paper and Citation

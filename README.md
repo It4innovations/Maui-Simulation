@@ -40,18 +40,28 @@ Example of an interactive plot:
 ![Alt text](images/interactive_plot_example.png?raw=true "Example of an interactive plot (cluster utilization of week 7)")
 
 # Paper and Citation
-The paper is available for download on [iadis digital library](http://www.iadisportal.org/digital-library/job-simulation-for-large-scale-pbs-based-clusters-with-the-maui-scheduler).
+The **original** paper is available for download on [iadis digital library](http://www.iadisportal.org/digital-library/job-simulation-for-large-scale-pbs-based-clusters-with-the-maui-scheduler).
 
-    @CONFERENCE{Zitzlsberger2018137,
+    @conference{Zitzlsberger20181,
         author={Zitzlsberger, G. and Jansík, B. and Martinovič, J.},
         title={Job simulation for large-scale PBS based clusters with the Maui Scheduler},
         journal={MCCSIS 2018 - Multi Conference on Computer Science and Information Systems; Proceedings of the International Conferences on Big Data Analytics, Data Mining and Computational Intelligence 2018, Theory and Practice in Modern Computing 2018 and Connected Smart Cities 2018},
         year={2018},
         pages={137-145}
     }
+  
+The **extended version** of the paper, published by the journal [IADIS INTERNATIONAL JOURNAL ON COMPUTER SCIENCE AND INFORMATION SYSTEMS](http://www.iadisportal.org/ijcsis/) Vol.13 Number 2 (2018), is available for download on [iadis digital library](http://www.iadisportal.org/ijcsis/papers/2018130204.pdf).
 
-The extended version of the paper, published by the journal [IADIS INTERNATIONAL JOURNAL ON COMPUTER SCIENCE AND INFORMATION SYSTEMS](http://www.iadisportal.org/ijcsis/) Vol.13 Number 2 (2018), is available for download on [iadis digital library](http://www.iadisportal.org/ijcsis/papers/2018130204.pdf).
-
+    @article{Zitzlsberger20182,
+        author={Zitzlsberger, G. and Jansík, B. and Martinovič, J.},
+        title={Feasibility analysis of using the Maui Scheduler for job simulation of large-scale PBS based clusters},
+        journal = {IADIS International Journal on Computer Science and Information Systems},
+        volume = {13},
+        number = {2},
+        year = {2018},
+        pages = {47--61}
+    }
+  
 # Contact
 Should you have any feedback or questions, please contact the author: Georg Zitzlsberger (georg.zitzlsberger(a)vsb.cz).
 

@@ -55,11 +55,11 @@ The **extended version** of the paper, published by the journal [IADIS INTERNATI
     @article{Zitzlsberger20182,
         author={Zitzlsberger, G. and Jansík, B. and Martinovič, J.},
         title={Feasibility analysis of using the Maui Scheduler for job simulation of large-scale PBS based clusters},
-        journal = {IADIS International Journal on Computer Science and Information Systems},
-        volume = {13},
-        number = {2},
-        year = {2018},
-        pages = {47--61}
+        journal={IADIS International Journal on Computer Science and Information Systems},
+        volume={13},
+        number={2},
+        year={2018},
+        pages={47--61}
     }
   
 # Contact

@@ -16,12 +16,13 @@ Change the user name (replace `userx`) and paths in `maui.cfg` and `Dockerfile` 
 `$ docker build -t maui_simulator .`
 
 2. Start the Docker container:  
-`$ docker run --rm -it --hostname mauisim -v .:/home/userx/workdir maui_simulator`  
+`$ docker run --rm -it --hostname mauisim -v $PWD:/home/userx/workdir maui_simulator`  
 Change the path `/home/userx/workdir` according to the previous changes.
 
 3. Start simulation:  
 Within the Docker container, start the Maui Scheduler's simulator:  
-`/usr/local/maui/sbin/maui &`  
+`/usr/local/maui/sbin/maui --host=mauisim &`  
+The default port Maui receives commands is `40559`. A different one can be specified by adding the option `--port=XYZ`.
 Then, execute the control script `control_example.sh`. Alternatively you can manually use the Maui Scheduler tools to control the simulation (`showstats`, `schedctl`, `setres`, etc.).  
 The results can be found in the `stats` directory (file `simstat.out`).
 

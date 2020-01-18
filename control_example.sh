@@ -1,4 +1,14 @@
 #!/bin/bash
+
+# You can use this like so:
+# $ export HOST=mauisim
+# $ export PORT=9999
+# $ /usr/local/maui/sbin/maui --host=$HOST --port=$PORT &
+# $ ./control_example.sh
+# ...
+# $ showstats
+# ...
+
 function block() { until showstats --host=$HOST --port=$PORT 2>/dev/null > /dev/null; do sleep 1; done }
 function clear_node() {
   JOB=$(checknode --host=$HOST --port=$PORT $1 | sed -n 's/JobList:[\t ]\+\([0-9]\+\)/\1/p')

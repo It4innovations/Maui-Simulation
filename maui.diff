@@ -84,3 +84,16 @@ index d5cb30b..cd5fce7 100644
    StartTime = MAX(StartTime,MSched.Time);
  
    if (StartTime >= EndTime)
+diff --git a/src/moab/MPBSI.c b/src/moab/MPBSI.c
+index 2c66b0b..bf39a8a 100644
+--- a/src/moab/MPBSI.c
++++ b/src/moab/MPBSI.c
+@@ -135,7 +135,7 @@ particular circumstance, the balance of the LICENSE will continue to apply.
+ # define ATTR_NODE_np  "np"
+ char *getreq();
+ #endif /* __MPBS21 */
+-
++#include "pbs_internal.h"
+ #include "moab.h"
+ #include "msched-proto.h"
+ 

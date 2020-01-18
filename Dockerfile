@@ -23,9 +23,10 @@ RUN apt-get install -y \
 RUN apt-get install -y \
         git
 
-# PBS
+# PBS (not used for the simulation but needed for building Maui)
 RUN git clone https://github.com/PBSPro/pbspro.git && \
         cd pbspro && \
+        git checkout tags/v18.1.2 && \
         ./autogen.sh && \
         ./configure --prefix=/opt/pbs --with-database-user=userx && \
         make install -j 4 && \
@@ -38,11 +39,12 @@ RUN git clone https://github.com/PBSPro/pbspro.git && \
         sed -i '/PBS_START_MOM=0/c\PBS_START_MOM=1' /etc/pbs.conf && \
         chmod 4755 /opt/pbs/sbin/pbs_iff /opt/pbs/sbin/pbs_rcp
 
-# Maui
+# Maui (there are no tags, so using commit ID for pinning)
 COPY maui.diff .
 
 RUN git clone https://github.com/LabAdvComp/maui.git && \
         cd maui && \
+        git checkout 59e2063 && \
         patch -p1 < ../maui.diff && \
         ./configure --with-pbs=/opt/pbs && \
         make install -j 4

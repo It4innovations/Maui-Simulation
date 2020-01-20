@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# You can use this like so:
+# You can use this like so (assuming "maui" was started with default port):
 # $ export HOST=mauisim
-# $ export PORT=9999
+# $ export PORT=40559
 # $ /usr/local/maui/sbin/maui --host=$HOST --port=$PORT &
 # $ ./control_example.sh
 # ...

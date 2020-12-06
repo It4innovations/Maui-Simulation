@@ -42,9 +42,10 @@ RUN git clone https://github.com/PBSPro/pbspro.git && \
 # Maui (there are no tags, so using commit ID for pinning)
 COPY maui.diff .
 
-RUN git clone https://github.com/LabAdvComp/maui.git && \
+#RUN git clone https://github.com/LabAdvComp/maui.git && \
+RUN git clone https://github.com/mfagiani/maui && \
         cd maui && \
-        git checkout 59e2063 && \
+#        git checkout 59e2063 && \ # Is only valid for the original code base from LabAdvComp
         patch -p1 < ../maui.diff && \
         ./configure --with-pbs=/opt/pbs && \
         make install -j 4

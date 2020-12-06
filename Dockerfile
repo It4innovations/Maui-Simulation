@@ -43,7 +43,7 @@ RUN git clone https://github.com/PBSPro/pbspro.git && \
 COPY maui.diff .
 
 #RUN git clone https://github.com/LabAdvComp/maui.git && \
-RUN git clone https://github.com/mfagiani/maui && \
+RUN git clone https://github.com/It4innovations/maui.git && \
         cd maui && \
 #        git checkout 59e2063 && \ # Is only valid for the original code base from LabAdvComp
         patch -p1 < ../maui.diff && \

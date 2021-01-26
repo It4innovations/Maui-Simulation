@@ -25,7 +25,9 @@ Within the Docker container, start the Maui Scheduler's simulator:
 The default port Maui receives commands is `40559`. A different one can be specified by adding the option `--port=XYZ`.
 Then, execute the control script `control_example.sh` as shown in its header comment.
 Alternatively you can manually use the Maui Scheduler tools to control the simulation (`showstats`, `schedctl`, `setres`, etc.).  
-The results can be found in the `stats` directory (file `simstat.out`).
+The results can be found in the `stats` directory (file `simstat.out`).  
+  
+Please note that `/usr/local/maui/maui.cfg` is used by default. It is a link to `/home/userx/workdir/maui.cfg` (with `userx` set to the user you defined in the Dockerfile). If you replace the `maui.cfg` make sure to either use the same target of the link or change the link in the `Dockerfile`. Alternatively you can start Maui with `/usr/local/maui/sbin/maui --host=mauisim --configfile=your_maui.cfg`.
 
 # Interactive Plots
 You can find the plots from the paper as a Jupyter notebook file (`interactive_plots/plots.ipynb`). It loads the plots from Python pickle files (`*.pkl`). Open the file in your own Jupyter notebook environment for interactive display.  

@@ -1,3 +1,12 @@
+**Table of Contents:**
+- [Maui Simulation Setup for IT4Innovations](#maui-simulation-setup-for-it4innovations)
+- [Quick Start Guide](#quick-start-guide)
+- [Interactive Plots](#interactive-plots)
+- [Paper and Citation](#paper-and-citation)
+- [Contact](#contact)
+- [Acknowledgement](#acknowledgement)
+- [License](#license)
+
 # Maui Simulation Setup for IT4Innovations
 This repository contains the setup of the Maui Scheduler to simulate the job scheduling of IT4Innovations' large-scale PBS based Salomon cluster. It has been used in our paper **Job Simulation for large-scale PBS based Clusters with the Maui Scheduler** (see section [Paper and Citation](#paper-and-citation) below) and is made available to enable other PBS based computing centers to run simulations. The following files are available:
 - `Dockerfile`: To create a Docker image with the Maui Scheduler environment. It includes PBS for satisfying the dependencies only, which does not need to run as a service.

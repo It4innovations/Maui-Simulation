@@ -4,7 +4,7 @@
 - [Interactive Plots](#interactive-plots)
 - [Paper and Citation](#paper-and-citation)
 - [Contact](#contact)
-- [Acknowledgement](#acknowledgement)
+- [Acknowledgements](#acknowledgements)
 - [License](#license)
 
 # Maui Simulation Setup for IT4Innovations
@@ -78,7 +78,7 @@ The **extended version** of the paper, published by the journal [IADIS INTERNATI
 # Contact
 Should you have any feedback or questions, please contact the author: Georg Zitzlsberger (georg.zitzlsberger(a)vsb.cz).
 
-# Acknowledgement
+# Acknowledgements
 This work was supported by The Ministry of Education, Youth and Sports from the Large Infrastructures for Research, Experimental
 Development and Innovations project ”IT4Innovations National Supercomputing Center – LM2015070”, by the ERDF in the IT4Innovations national supercomputing center – path to exascale project (CZ.02.1.01/0.0/0.0/16_013/0001791) within the OPRDE, and ANTAREX, a project supported by the EU H2020 FET-HPC program under grant agreement No. 671623.
 
